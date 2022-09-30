@@ -1,0 +1,21 @@
+{
+  "name": "utax",
+  "version": "0.0.1",
+  "type": "module",
+  "license": "AGPL-3.0-or-later",
+  "devDependencies": {
+    "@iuser/node-loader": "^0.0.25",
+    "@iuser/write": "^0.0.7",
+    "@rmw/thisdir": "^0.0.2",
+    "coffee_plus": "^0.0.39"
+  },
+  "author": "i@user.tax",
+  "exports": {
+    ".": "./lib/index.js",
+    "./*": "./lib/*"
+  },
+  "files": [
+    "lib/*"
+  ],
+  "repository": "git@github.com:user-tax-dev/utax.git"
+}
