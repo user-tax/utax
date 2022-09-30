@@ -1,5 +1,9 @@
-String.prototype.render = (dict) ->
+export default render = (str, args...)=>
   new Function(
-    ...Object.keys(dict)
-    "return `#{this}`"
-  ) ...Object.values(dict)
+    ...args
+    "return `#{str}`"
+  )
+
+String.prototype.render = (dict) ->
+  render(this, ...Object.keys(dict)) ...Object.values(dict)
+

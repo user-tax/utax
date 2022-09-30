@@ -10,8 +10,9 @@ git pull
 
 version=$(cat package.json|jq -r '.version')
 
+git add -u || true
+git commit -m. || true
 ./build.sh
-
 npm set unsafe-perm true
 npm version patch
 git add -u
