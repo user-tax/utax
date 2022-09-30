@@ -1,7 +1,5 @@
-String.prototype.interpolate = (dict) =>
+String.prototype.render = (dict) ->
   new Function(
     ...Object.keys(dict)
-    `return \`${this}\`;`
-  )(
-    ...Object.values(dict)
-  )
+    "return `#{this}`"
+  ) ...Object.values(dict)

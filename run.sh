@@ -5,4 +5,4 @@ cd $DIR
 set -ex
 
 ./build.sh
-./test/index.coffee | tee out.txt
+./test.coffee
