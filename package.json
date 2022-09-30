@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "license": "AGPL-3.0-or-later",
+  "devDependencies": {
+    "@iuser/node-loader": "^0.0.25",
+    "@rmw/thisdir": "^0.0.2",
+    "coffee_plus": "^0.0.39"
+  }
+}
