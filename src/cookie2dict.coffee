@@ -1,9 +1,12 @@
 > ./split.js
 
 < (cookie)=>
-  cookie = cookie.split(';')
   r = {}
-  for i from cookie
-    [k,v] = split i.trim(),'='
-    r[k]=v
+  if cookie
+    cookie = cookie.split(';')
+    for i from cookie
+      [k,v] = split i,'='
+      r[k.trimStart()]=v
   r
+
+
